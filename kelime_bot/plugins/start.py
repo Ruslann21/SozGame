@@ -11,17 +11,17 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("➕𝐌ə𝐧𝐢 𝐪𝐫𝐮𝐩𝐚 ə𝐥𝐚𝐯ə 𝐞𝐭➕", url=f"http://t.me/RCoyun_bot?startgroup=new")
+        InlineKeyboardButton("➕ Məni Qrupa Əlavə Et ➕", url=f"http://t.me/KrayzenGamebot?startgroup=new")
     ],
     [
-        InlineKeyboardButton(" 𝐎𝐰𝐧𝐞𝐫🇦🇿 ", url="t.me/Devolaperdi"),
-        InlineKeyboardButton("𝐐𝐫𝐮𝐩", url="t.me/narahat_respubilka"),
+        InlineKeyboardButton("👨🏻‍💻 Bot Sahibi", url="t.me/Hasbullahh"),
+        InlineKeyboardButton("🆘 Support", url="t.me/KrayzenSupport"),
     ]
 ])
 
 
 START = """
-**🔮 Salam, 𝚁𝙲 𝙾𝚈𝚄𝙽 𝙱𝙾𝚃-a xoş gəldin bu bot ilə söz tapmaq oyunu oynaya bilərsiniz..**
+**🙋🏻 Salam, bu bot ilə söz tapmaq oyunu oynaya bilərsiniz.**
 
 ➤ Məlumat üçün 👉 /help üzərinə klikləyin.  Əmrlər asan və sadədir.
 """
@@ -39,11 +39,11 @@ HELP = """
 # Komutlar. 
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-  await message.reply_photo("https://telegra.ph/file/fbae3dc2b7e5c3863c1d5.jpg",caption=START,reply_markup=keyboard)
+  await message.reply_photo("https://telegra.ph/file/6f747c2b01c9651a8b477.jpg",caption=START,reply_markup=keyboard)
 
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
-  await message.reply_photo("https://telegra.ph/file/fbae3dc2b7e5c3863c1d5.jpg",caption=HELP) 
+  await message.reply_photo("https://telegra.ph/file/6f747c2b01c9651a8b477.jpg",caption=HELP) 
 
 # Oyunu başlat. 
 @Client.on_message(filters.command("oyna")) 
@@ -57,7 +57,7 @@ async def kelimeoyun(c:Client, m:Message):
         aktif = False
 
     if aktif:
-        await m.reply("**❗ Qrupunuzda  oyun artıq davam edir ✍🏻 \n Oyunu dayandırmaq üçün /dayan yaza bilərsiniz")
+        await m.reply("**❗ Qrupunuzda oyun artıq davam edir ✍🏻 \n Oyunu dayandırmaq üçün /dayan yaza bilərsiniz")
     else:
         await m.reply(f"**{m.from_user.mention}** Tərəfindən! \nSöz Tapma Oyunu Başladı .\n\nUğurlar !", reply_markup=kanal)
         
