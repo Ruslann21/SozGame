@@ -18,7 +18,7 @@ LOGGER = logging.getLogger(__name__)
 API_ID = getenv("API_ID", "22007754")
 API_HASH = getenv("API_HASH", "7f0d6b4d928155eda014acdb5a014620")
 TOKEN = getenv("TOKEN", "6447680335:AAFs4Nnuy0sj7vmQJ1KEkDPs6McjLfTXUHY")
-USERNAME = getenv("USERNAME", "smaylw)
+USERNAME = getenv("USERNAME", "smaylw")
 OWNER_ID = getenv("OWNER_ID", "6142419734)
 
 if OWNER_ID and len(OWNER_ID) and OWNER_ID.isdigit():
