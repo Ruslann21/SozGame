@@ -14,8 +14,8 @@ keyboard = InlineKeyboardMarkup([
         InlineKeyboardButton("➕ Məni Qrupa Əlavə Et ➕", url=f"http://t.me/KrayzenGamebot?startgroup=new")
     ],
     [
-        InlineKeyboardButton("👨🏻‍💻 Bot Sahibi", url="t.me/Hasbullahh"),
-        InlineKeyboardButton("🆘 Support", url="t.me/KrayzenSupport"),
+        InlineKeyboardButton("👨🏻‍💻 Bot Sahibi", url="t.me/smaylw"),
+        InlineKeyboardButton("🆘 Support", url="https://t.me/SozOyunuBotu"),
     ]
 ])
 
@@ -39,11 +39,11 @@ HELP = """
 # Komutlar. 
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-  await message.reply_photo("https://telegra.ph/file/6f747c2b01c9651a8b477.jpg",caption=START,reply_markup=keyboard)
+  await message.reply_photo("https://graph.org/file/cd1f259a09b282795a30c.jpg",caption=START,reply_markup=keyboard)
 
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
-  await message.reply_photo("https://telegra.ph/file/6f747c2b01c9651a8b477.jpg",caption=HELP) 
+  await message.reply_photo("https://graph.org/file/cd1f259a09b282795a30c.jpg",caption=HELP) 
 
 # Oyunu başlat. 
 @Client.on_message(filters.command("oyna")) 
